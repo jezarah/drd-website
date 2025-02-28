@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --primary: #ff3131;
+  --secondary: #dcdcdc;
+  --navbar-background: #141414;
+  --secondary-background: rgba(242, 242, 242, 0.95);
+  --border-color: lightgrey;
+  --max-content-width: 1300px;
+  --navbar-height: 8rem;
+}
+
+html, body {
+  overflow-x: hidden;
+  overscroll-behavior-y: none;
+}
+
+body {
+  color: black;
+  background: white;
+}
+
+img {
+  max-height: 100%;
+  width: auto;
+}
+
+/*Calculate Site Wide Content Width*/
+.content {
+  justify-self: center;
+  width: min(88vw, var(--max-content-width));
+}
+
+/*Calculate Navigation Bar Placement*/
+.navbar {
+  left: calc(50vw - min(88vw, var(--max-content-width))/2);
+}
+
+/*Variable Sizing for Site Logo*/
+.logo {
+  width: min(25vw, 300px);
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .logo {
+    width: 192px;
+  }
+}
+
+/*page header section - image background*/
+.home-page-header {
+  height: 512px;
+  padding-top: var(--navbar-height);
+}
+
+@media (min-width: 1024px) {
+  .home-page-header {
+    height: min(50vw, calc(0.5 * var(--max-content-width)));
+  }
+}
+
+.form-field {
+  padding: 4px ;
+  margin: 4px 4px;
+  height: 40px;
+  font-size: 16px;
+  background-color: white;
+  border-color: var(--border-color);
+  border-radius: 10px;
+}
+
+.form-field.h-unset {
+  height: unset;
+}
