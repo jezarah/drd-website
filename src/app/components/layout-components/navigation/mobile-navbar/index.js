@@ -4,7 +4,7 @@ import React from "react";
 const MobileNavbar = ({ isOpen, toggle }) => {
     return (
         <>
-            <div className="fixed w-full h-full overflow-auto justify-center bg-navbar-bg grid z-10"
+            <div className="fixed w-full h-full overflow-auto justify-center bg-navbar-bg grid z-20"
                  style={{
                      opacity: `${isOpen ? "1" : "0"}`,
                      top: ` ${isOpen ? "0" : "-100%"}`,

@@ -7,7 +7,7 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 export default function FAQAccordion() {
     return (
         <>
-            <h1 id="faq" className="text-2xl text-center font-bold mb-2">FAQ&apos;s</h1>
+            <h1 id="faq" className="text-2xl text-center font-bold mb-2 scroll-mt-16">FAQ&apos;s</h1>
             <div className="w-full">
                 <Accordion>
                     <AccordionSummary

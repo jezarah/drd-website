@@ -66,10 +66,6 @@ const EmblaCarousel = () => {
                                width={500} height={300} alt="construction site10"/>
                     </div>
                     <div className="embla__slide">
-                        <Image src="/images/carousel/carousel-img1.jpg"
-                               width={500} height={300} alt="construction site11"/>
-                    </div>
-                    <div className="embla__slide">
                         <Image src="/images/carousel/drainmat.jpg"
                                width={500} height={300} alt="construction site12"/>
                     </div>

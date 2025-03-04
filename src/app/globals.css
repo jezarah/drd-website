@@ -63,6 +63,18 @@ img {
   }
 }
 
+.wave {
+  position: absolute;
+  z-index: 0;
+  top: calc(119px + (65/276)*100vw);
+  @media(min-width: 1300px) {
+    top: 425px;
+  }
+  @media(min-width: 1540px) {
+    top: calc(425px - 3vw);
+  }
+}
+
 .form-field {
   padding: 4px ;
   margin: 4px 4px;
